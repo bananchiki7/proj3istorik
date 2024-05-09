@@ -1,0 +1,73 @@
+.header {
+    background-color: #DF803E;
+}
+
+.container {}
+
+.header-nav {
+    padding: 10px 0 10px 5px;
+}
+
+.header-nav-list {
+    width: 290px;
+    display: flex;
+    column-gap: 7px;
+}
+
+.header-nav-list-item {}
+
+.header-nav-list-item-link {
+    text-align: center;
+    font-size: 7px;
+    color: #000;
+}
+
+.header-nav-info-list {
+    display: none;
+}
+
+.header-nav-info-list-item {}
+
+.header-nav-info-list-item-img {}
+
+.hero {
+    height: auto;
+    background-color: #DF803E;
+    border-top: 2px solid #FCFCFC;
+    position: relative;
+}
+
+.hero-info {
+    position: relative;
+}
+
+.hero-info-title {
+    text-align: center;
+    font-size: 32px;
+}
+
+.hero-info-text {
+    font-size: 10px;
+    line-height: 1.3;
+}
+
+.hero-info-button {
+    width: 67px;
+    height: 19px;
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    text-align: center;
+    font-size: 7px;
+    /* padding: 1px 8px; */
+}
+
+.hero-info::after {
+    background-image: url(./icons/whiteTriagle.svg);
+    position: absolute;
+    content: '';
+    width: 278px;
+    height: 289px;
+    top: 0;
+}
+

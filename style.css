@@ -4,9 +4,6 @@
     position: absolute;
     width: 100%;
     z-index: 1;
-}
-
-.header-nav {
     padding: 10px 0 10px 0;
 }
 
@@ -29,15 +26,15 @@
 .hero {
     position: relative;
     background-color: #df803e;
-    height: 245px;
     padding-top: 50px;
+    padding-bottom: 92px;
 }
 
 .hero::after {
     content: "";
     position: absolute;
     right: 0;
-    top: 40px;
+    top: 30px;
     width: 217px;
     height: 242px;
     background-image: url("./Photoes/whiteTriangleSmall.webp");
@@ -69,7 +66,7 @@
     line-height: 1.3;
     font-weight: 400;
     margin-top: 13px;
-    margin-bottom: 32px;
+    margin-bottom: 31px;
 }
 
 .hero-info-button {
@@ -80,7 +77,12 @@
     text-align: center;
     font-size: 7px;
     padding: 1px 8px;
-    background: #fff;
+    background-color: #fff;
+}
+
+.hero-info-button:hover {
+    color: rgba(222, 116, 43);
+    transition: 0.3s;
 }
 
 @media screen and (min-width: 1920px) {
@@ -91,12 +93,9 @@
     }
 
     .header {
-        stroke-width: 2px;
-        stroke: #fcfcfc;
-        padding-bottom: 19px;
-        padding-top: 40px;
+        padding-bottom: 29px;
+        padding-top: 50px;
         z-index: 1;
-
     }
 
     .header-nav {
@@ -114,7 +113,6 @@
 
     .header-nav-info-list {
         display: inline-flex;
-        align-items: center;
         gap: 24px;
         margin-left: 450px;
     }
@@ -125,8 +123,8 @@
     }
 
     .hero {
-        padding-top: 113px;
-        height: 1080px;
+        padding-top: 267px;
+        padding-bottom: 331px;
     }
 
     .hero::after {
@@ -157,26 +155,22 @@
 
     .hero-info-title {
         font-size: 90px;
-        margin-top: 154px;
-        left: 120px;
     }
 
     .hero-info-text {
-        width: 875px;
+        width: 800px;
         font-size: 50px;
         line-height: 1.3;
-        top: 268px;
-        left: 120px;
+        margin-top: 24px;
+        margin-bottom: 107px;
     }
 
     .hero-info-button {
-        margin-top: 107px;
         width: auto;
         height: auto;
         display: inline-block;
         padding: 20px 42px;
         text-align: center;
-        align-items: flex-start;
         border-radius: 10px;
         background: #fcfcfc;
         font-size: 26px;
@@ -265,6 +259,7 @@
 .areas {
     background-color: #DF803E;
     padding-top: 40px;
+    padding-bottom: 13px;
 }
 
 .areas-list {
@@ -275,7 +270,7 @@
     font-size: 20px;
     line-height: 1.3;
     text-align: center;
-    margin: 0 11px 12px 10px;
+    margin-bottom: 12px;
 }
 
 .areas-list-item {
@@ -283,6 +278,7 @@
     border-top: 1px solid #000;
     padding-bottom: 20px;
     padding-top: 6px;
+    column-gap: 12px;
 }
 
 .areas-list-item:nth-child(5)>a {
@@ -310,7 +306,7 @@
     font-size: 10px;
     line-height: 1.3;
     color: #000;
-    margin: 6px 0 6px 12px;
+    margin: 6px 0;
 }
 
 .areas-button:hover {
@@ -342,14 +338,13 @@
 
 
 @media screen and (min-width: 1920px) {
-    .container {
-        min-width: 1620px;
-        margin-left: auto;
-        margin-right: auto;
+    .areas {
+        padding-top: 108px;
+        padding-bottom: 125px;
     }
 
     .areas-title {
-        margin: 68px 70px 64px 70px;
+        margin-bottom: 64px;
         font-size: 50px;
     }
 
@@ -362,6 +357,7 @@
     .areas-list-item {
         border-top: 2px solid #000;
         padding-top: 16px;
+        column-gap: 35px;
     }
 
     .areas-list-item:last-child {
@@ -380,14 +376,14 @@
     }
 
     .areas-list-item-link {
-        margin: 9px 0 11px 34px;
+        margin: 9px 0 11px 0;
         font-size: 34px;
     }
 
     .areas-button {
         padding: 20px 40px;
         font-size: 26px;
-        margin: 64px 649px 125px 659px;
+        margin: 64px 649px 0 659px;
     }
 
     .areas-list::before {
@@ -413,9 +409,37 @@
 
 
 
-.training{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Zilla Slab, serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 295px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.training {
     padding: 20px 0px 18px;
 }
+
+.training-wrapper {
+    margin-bottom: 26px;
+}
+
 .training-first-title {
     text-align: center;
     font-size: 20px;
@@ -423,7 +447,7 @@
 }
 
 .training-second-title {
-    padding: 26px;
+    margin-bottom: 26px;
     text-align: center;
     font-size: 20px;
     line-height: 1.3;
@@ -443,6 +467,7 @@
 }
 
 .training-first-list-item {
+    gap: 20px;
     display: flex;
     height: 42px;
 }
@@ -450,7 +475,6 @@
 .training-second-list-item {
     display: flex;
     gap: 8px;
-    height: 73px;
 }
 
 .training-first-list-item-number {
@@ -483,7 +507,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 20px;
     font-size: 14px;
     line-height: 1.3;
 }
@@ -497,7 +520,6 @@
 .training-image {
     position: relative;
     left: -13px;
-    right: 13px;
     margin-top: 12px;
     min-width: 320px;
     height: 180px;
@@ -510,13 +532,13 @@
 }
 
 
-.travels>.container{
+.travels-container {
     width: 320px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.travels{
+.travels {
     padding-top: 30px;
 }
 
@@ -528,7 +550,7 @@
 }
 
 .travels-text {
-    padding: 0px 24px 15px;
+    margin: 0px auto 15px;
     font-size: 12px;
     line-height: 1.3;
 }
@@ -565,6 +587,8 @@
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+    width: 320px;
+    height: 185px;
 }
 
 .travels-image-4 {
@@ -573,6 +597,8 @@
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
+    width: 320px;
+    height: 176px;
 }
 
 .travels-grid {
@@ -581,15 +607,16 @@
 
 
 @media(min-width: 1920px) {
-    .travels{
+    .travels {
         padding-bottom: 120px;
+        padding-top: 48px;
     }
 
     .travels>.container {
         min-width: 1680px;
     }
-    
-    .training{
+
+    .training {
         padding-top: 215px;
     }
 
@@ -623,7 +650,7 @@
     .training-second-title {
         font-size: 50px;
         text-align: center;
-        padding: 65px;
+        margin: 65px;
         font-weight: 400;
     }
 
@@ -699,9 +726,6 @@
         width: 417px;
     }
 
-    .travels{
-        padding-top: 78px;
-    }
 
     .travels-title {
         font-size: 50px;
@@ -805,8 +829,9 @@
 }
 
 .team {
-    background: #df803e;
+    background-color: #df803e;
     padding-top: 17px;
+    padding-bottom: 72px;
 }
 
 .team-title {
@@ -826,12 +851,12 @@
     display: none;
 }
 
-.team-list-item{
+.team-list-item {
     width: 138px;
     height: 264px;
     background-color: rgba(252, 252, 252, 1);
     border-radius: 14px;
-    margin: 41px 6px 72px 6px;
+    margin: 41px 6px 0 6px;
 }
 
 .team-list-item-img {
@@ -864,19 +889,20 @@
     display: block;
 }
 
-.team-arrow-left{
+.team-arrow-left {
     width: 35px;
     height: 35px;
 }
 
-.team-arrow-right{
+.team-arrow-right {
     width: 35px;
     height: 35px;
 }
 
 @media (min-width: 1920px) {
-    .team{
+    .team {
         padding-top: 108px;
+        padding-bottom: 120px;
     }
 
     .team-title {
@@ -888,46 +914,45 @@
     .team-list {
         flex-direction: row;
         column-gap: 32px;
-        margin-bottom: 120px;
     }
 
     .team-list-item {
         display: block;
     }
 
-    
+
     .team-arrow-left {
         width: 106px;
         height: 106px;
     }
-    
-    .team-list-item{
+
+    .team-list-item {
         width: 400px;
         height: 690px;
     }
-    
+
     .team-list-item-img {
         width: 400px;
         height: 509px;
     }
-    
+
     .team-list-item-title {
         font-size: 30px;
         line-height: 1;
         margin-top: 33px;
         margin-bottom: 18px;
     }
-    
+
     .team-list-item-text {
         font-size: 22px;
         margin-bottom: 72px;
     }
-    
+
     .team-list-item-text2 {
         font-size: 26px;
         display: none;
     }
-    
+
     .team-arrow-right {
         width: 106px;
         height: 106px;
@@ -935,8 +960,17 @@
 }
 
 
+.reviews {
+    padding-top: 17px;
+    padding-bottom: 46px;
+}
+
 .reviews>.container {
     width: 316px;
+}
+
+.reviews-wraper {
+    display: flex;
 }
 
 .reviews-title {
@@ -944,15 +978,12 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 1.3;
-    margin: 17px 0 13px 0;
+    margin-bottom: 13px;
 }
 
-.reviews-list {
-    width: 271px;
-    margin-bottom: 38px;
-}
+.reviews-list {}
 
-.reviews-list-arrow-right {
+.reviews-button-arrow-right {
     display: none;
 }
 
@@ -982,27 +1013,36 @@
     border-bottom: 2px solid #fcfcfc;
 }
 
-.reviews-list-arrow-left {
+.reviews-button-left {
+    display: none;
+}
+
+.reviews-button-right {
     display: none;
 }
 
 @media (min-width: 1920px) {
+    .reviews {
+        padding-top: 108px;
+        padding-bottom: 126px;
+    }
+
     .reviews>.container {
         min-width: 1620px;
     }
 
+    .reviews-wraper {
+        position: relative;
+    }
+
     .reviews-title {
-
         font-size: 50px;
+        margin-bottom: 58px;
     }
 
-    .reviews-list {
-        display: flex;
-    }
+    .reviews-list {}
 
     .reviews-list-item {
-        display: flex;
-        width: 1680px;
         display: none;
     }
 
@@ -1010,14 +1050,9 @@
         padding: 48px 76px 66px 80px;
         width: 1330px;
         height: 332px;
-        margin: 0 69px;
+        margin: 0 auto;
     }
 
-    .reviews-list-arrow-right {
-        display: block;
-        width: 106px;
-        height: 106px;
-    }
 
     .reviews-list-item-card-title {
         font-size: 34px;
@@ -1032,14 +1067,29 @@
         margin-top: 23px;
     }
 
-    .reviews-list-arrow-left {
+    .reviews-button-arrow-left {
+    }
+    
+    .reviews-button-arrow-right {}
+    
+    .reviews-button-right {
         display: block;
         width: 106px;
         height: 106px;
+        background-color: rgba(255, 255, 255, 1);
+        border: 0;
+    }
+
+    .reviews-button-left {
+        display: block;
+        width: 106px;
+        height: 106px;
+        background-color: rgba(255, 255, 255, 1);
+        border: 0;
     }
 
     .reviews-active {
-        display: flex;
+        display: block;
     }
 }
 
@@ -1077,14 +1127,18 @@
 }
 
 @media screen and (min-width: 1920px) {
+    .footer {
+        padding-top: 112px;
+        padding-bottom: 127px;
+    }
+
     .footer-context {
         display: flex;
-        padding: 112px 0 127px 0;
     }
 
     .footer-text {
         font-size: 42px;
-        margin-bottom: 10px;
+        margin: 0;
     }
 
     .footer-list {
@@ -1103,7 +1157,6 @@
     .footer-media {
         display: block;
         width: 158px;
-        height: 52px;
     }
 
     .footer-media-text {

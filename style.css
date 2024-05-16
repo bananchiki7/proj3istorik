@@ -61,7 +61,7 @@
 }
 
 .hero-info-text {
-    width: 161px;
+    width: 150px;
     font-size: 10px;
     line-height: 1.3;
     font-weight: 400;
@@ -70,14 +70,13 @@
 }
 
 .hero-info-button {
-    width: 64px;
-    height: 16px;
     border-radius: 3px;
     border: #000;
     text-align: center;
     font-size: 7px;
     padding: 1px 8px;
     background-color: #fff;
+    max-width: 64px;
 }
 
 .hero-info-button:hover {
@@ -166,14 +165,13 @@
     }
 
     .hero-info-button {
-        width: auto;
-        height: auto;
         display: inline-block;
         padding: 20px 42px;
         text-align: center;
         border-radius: 10px;
         background: #fcfcfc;
         font-size: 26px;
+        max-width: 391px;
     }
 }
 
@@ -1067,11 +1065,10 @@ ul {
         margin-top: 23px;
     }
 
-    .reviews-button-arrow-left {
-    }
-    
+    .reviews-button-arrow-left {}
+
     .reviews-button-arrow-right {}
-    
+
     .reviews-button-right {
         display: block;
         width: 106px;
@@ -1156,7 +1153,6 @@ ul {
 
     .footer-media {
         display: block;
-        width: 158px;
     }
 
     .footer-media-text {

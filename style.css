@@ -826,6 +826,7 @@ ul {
     }
 }
 
+
 .team {
     background-color: #df803e;
     padding-top: 17px;
@@ -837,12 +838,14 @@ ul {
     font-weight: 400;
     line-height: 1.3;
     text-align: center;
+    margin-bottom: 41px;
 }
 
-.team-list {
+.team-wraper {
     display: flex;
     align-items: center;
     justify-content: center;
+    column-gap: 8px;
 }
 
 .team-list-item {
@@ -850,17 +853,16 @@ ul {
 }
 
 .team-list-item {
-    width: 138px;
-    height: 264px;
     background-color: rgba(252, 252, 252, 1);
     border-radius: 14px;
-    margin: 41px 6px 0 6px;
+    padding-bottom: 9px;
 }
 
 .team-list-item-img {
     width: 138px;
     height: 183px;
     border-radius: 14px 14px 0 0;
+    margin-bottom: 2px;
 }
 
 .team-list-item-title {
@@ -868,7 +870,6 @@ ul {
     font-weight: 400;
     line-height: 1.3;
     text-align: center;
-    margin-top: 2px;
 }
 
 .team-list-item-text {
@@ -877,10 +878,18 @@ ul {
     margin-bottom: 8px;
 }
 
-.team-list-item-text2 {
+.team-list-item-text-small {
+    width: 138px;
     text-align: center;
     font-size: 9px;
     margin-bottom: 6px;
+}
+
+.team-list-item-text-small2 {
+    font-size: 9px;
+    text-align: center;
+    width: 80px;
+    margin: 0 auto;
 }
 
 .team-active {
@@ -906,18 +915,22 @@ ul {
     .team-title {
         font-size: 50px;
         line-height: 1.3;
-        margin-bottom: 64px;
+        margin-bottom: 183px;
+    }
+
+    .team-wraper {
+        column-gap: 64px;
     }
 
     .team-list {
-        flex-direction: row;
+        display: flex;
         column-gap: 32px;
     }
 
-    .team-list-item {
-        display: block;
+    .team-arrow-right {
+        width: 106px;
+        height: 106px;
     }
-
 
     .team-arrow-left {
         width: 106px;
@@ -925,8 +938,8 @@ ul {
     }
 
     .team-list-item {
-        width: 400px;
-        height: 690px;
+        padding: 0;
+        display: block;
     }
 
     .team-list-item-img {
@@ -946,15 +959,17 @@ ul {
         margin-bottom: 72px;
     }
 
-    .team-list-item-text2 {
+    .team-list-item-text-small {
         font-size: 26px;
         display: none;
     }
 
-    .team-arrow-right {
-        width: 106px;
-        height: 106px;
+    .team-list-item-text-small2 {
+        font-size: 26px;
+        text-align: center;
+        display: none;
     }
+
 }
 
 
@@ -967,10 +982,6 @@ ul {
     width: 316px;
 }
 
-.reviews-wraper {
-    display: flex;
-}
-
 .reviews-title {
     text-align: center;
     font-size: 20px;
@@ -979,17 +990,13 @@ ul {
     margin-bottom: 13px;
 }
 
-.reviews-list {}
-
 .reviews-button-arrow-right {
     display: none;
 }
 
 .reviews-list-item-card {
-    width: 316px;
     border-radius: 20px;
     background: rgba(222, 116, 43, 0.9);
-    height: 200px;
     font-size: 10px;
     padding: 31px 23px 26px 19px;
     margin-bottom: 8px;
@@ -1019,6 +1026,12 @@ ul {
     display: none;
 }
 
+.line-card::after{
+    content: '';
+    background-image: url(./Photoes/backgroundGirafe.webp);
+    
+}
+
 @media (min-width: 1920px) {
     .reviews {
         padding-top: 108px;
@@ -1026,11 +1039,14 @@ ul {
     }
 
     .reviews>.container {
-        min-width: 1620px;
+        min-width: 1680px;
     }
 
     .reviews-wraper {
-        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 69px;
     }
 
     .reviews-title {
@@ -1038,19 +1054,15 @@ ul {
         margin-bottom: 58px;
     }
 
-    .reviews-list {}
-
     .reviews-list-item {
         display: none;
     }
 
     .reviews-list-item-card {
-        padding: 48px 76px 66px 80px;
+        padding: 48px 76px 74px 80px;
         width: 1330px;
-        height: 332px;
-        margin: 0 auto;
+        margin: 0;
     }
-
 
     .reviews-list-item-card-title {
         font-size: 34px;
@@ -1065,9 +1077,15 @@ ul {
         margin-top: 23px;
     }
 
-    .reviews-button-arrow-left {}
+    .reviews-button-left {
+        width: 106px;
+        height: 106px;
+    }
 
-    .reviews-button-arrow-right {}
+    .reviews-button-right {
+        width: 106px;
+        height: 106px;
+    }
 
     .reviews-button-right {
         display: block;
@@ -1080,7 +1098,6 @@ ul {
     .reviews-button-left {
         display: block;
         width: 106px;
-        height: 106px;
         background-color: rgba(255, 255, 255, 1);
         border: 0;
     }

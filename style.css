@@ -175,7 +175,7 @@
     }
 }
 
-.about {
+.about{
     padding-top: 24px;
     padding-bottom: 23px;
 }
@@ -205,6 +205,7 @@
 
 .about-list-item-img {
     width: 120px;
+    height: 120px;
     margin: 0 11px 17px 11px;
 }
 
@@ -213,11 +214,10 @@
     font-weight: 400;
     font-size: 13px;
     line-height: 1.3;
-
 }
 
 @media (min-width:1920px) {
-    .about {
+    .about{
         padding-top: 108px;
         padding-bottom: 120px;
     }
@@ -239,11 +239,12 @@
     .about-list-item {
         width: 408px;
         height: 446px;
-        padding: 53px 59px 53px 59px;
+        padding: 53px 59px 0px 59px;
     }
 
     .about-list-item-img {
         width: 224px;
+        height: 224px;
         margin: 0 42px 17px 42px;
     }
 
@@ -1020,10 +1021,6 @@
     margin-bottom: 13px;
 }
 
-.reviews-button-arrow-right {
-    display: none;
-}
-
 .reviews-list-item-card {
     border-radius: 20px;
     background: rgba(222, 116, 43, 0.9);
@@ -1111,16 +1108,6 @@
     .line-card {
         width: 1173px;
         margin-top: 23px;
-    }
-
-    .reviews-button-left {
-        width: 106px;
-        height: 106px;
-    }
-
-    .reviews-button-right {
-        width: 106px;
-        height: 106px;
     }
 
     .reviews-button-right {

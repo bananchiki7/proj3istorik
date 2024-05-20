@@ -62,3 +62,4 @@ buttonRightRe.addEventListener("click", () => {
         arr2[a - 1].classList.remove('reviews-active');
     }
 });
+

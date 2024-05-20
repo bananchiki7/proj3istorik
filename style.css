@@ -227,7 +227,7 @@
         padding-bottom: 120px;
     }
 
-    .about > .container {
+    .about>.container {
         min-width: 1388px;
     }
 

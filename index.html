@@ -21,37 +21,37 @@
       <nav class="header-nav">
         <ul class="header-nav-list">
           <li class="header-nav-list-item">
-            <a class="header-nav-list-item-link" href="#">Про нас</a>
+            <a class="header-nav-list-item-link" href="#about">Про нас</a>
           </li>
           <li class="header-nav-list-item">
-            <a class="header-nav-list-item-link" href="#">Напрямки роботи</a>
+            <a class="header-nav-list-item-link" href="#areas">Напрямки роботи</a>
           </li>
           <li class="header-nav-list-item">
-            <a class="header-nav-list-item-link" href="#">Навчання</a>
+            <a class="header-nav-list-item-link" href="#training">Навчання</a>
           </li>
           <li class="header-nav-list-item">
-            <a class="header-nav-list-item-link" href="#">Наші подорожі</a>
+            <a class="header-nav-list-item-link" href="#travels">Наші подорожі</a>
           </li>
           <li class="header-nav-list-item">
-            <a class="header-nav-list-item-link" href="#">Наша команда</a>
+            <a class="header-nav-list-item-link" href="#team">Наша команда</a>
           </li>
           <li class="header-nav-list-item">
-            <a class="header-nav-list-item-link" href="#">Відгуки</a>
+            <a class="header-nav-list-item-link" href="#reviews">Відгуки</a>
           </li>
         </ul>
         <ul class="header-nav-info-list">
           <li class="header-nav-info-list-item">
-            <a class="header-nav-info-list-item-link" href="#">
+            <a class="header-nav-info-list-item-link" href="tel:+380508439168">
               <img class="header-nav-info-list-item-img" src="./icons/phone.svg" alt="phone" />
             </a>
           </li>
           <li class="header-nav-info-list-item">
-            <a class="header-nav-info-list-item-link" href="#">
+            <a class="header-nav-info-list-item-link" href="https://maps.app.goo.gl/T4YAu8cZcRVnkh5KA">
               <img class="header-nav-info-list-item-img" src="./icons/location.svg" alt="location" />
             </a>
           </li>
           <li class="header-nav-info-list-item">
-            <a class="header-nav-info-list-item-link" href="#">
+            <a class="header-nav-info-list-item-link" href="mailto:info@giraffe.in.ua">
               <img class="header-nav-info-list-item-img" src="./icons/email.svg" alt="email" />
             </a>
           </li>
@@ -71,7 +71,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
       <div class="container">
         <h2 class="about-title">Мовних шкіл багато - лідер один!</h2>
         <ul class="about-list">
@@ -111,7 +111,7 @@
       </div>
     </section>
 
-    <section class="areas">
+    <section id="areas" class="areas">
       <div class="container">
         <h2 class="areas-title">Що ти можеш у нас знайти?</h2>
         <ul class="areas-list">
@@ -153,7 +153,7 @@
       </div>
     </section>
 
-    <section class="training">
+    <section id="training" class="training">
       <div class="container">
         <div class="training-wrapper">
           <div class="training-first">
@@ -213,7 +213,7 @@
       </div>
     </section>
 
-    <section class="travels">
+    <section id="travels" class="travels">
       <div class="container">
         <h2 class="travels-title">Ми подорожуємо світом</h2>
         <p class="travels-text">Лондон, Греція, Болгарія, Польша, різні міста України.
@@ -237,13 +237,15 @@
       </div>
     </section>
 
-    <section class="team">
+    <section id="team" class="team">
       <div class="container">
         <h2 class="team-title">
           Найкраща команда - найкращі результати
         </h2>
         <div class="team-wraper">
-          <img class="team-arrow-left" src="./icons/arrowLeftWhite.svg" alt="arrowLeftWhite">
+          <button class="team-button-left">
+            <img class="team-arrow-left" src="./icons/arrowLeftBig.svg" alt="arrowLeftWhite">
+          </button>
           <ul class="team-list">
             <li class="team-list-item">
               <img class="team-list-item-img" src="./Photoes/physica.webp" alt="physicsTeacher" />
@@ -275,12 +277,14 @@
               <p class="team-list-item-text-small2">Викладацький стаж: 17 років</p>
             </li>
           </ul>
-          <img class="team-arrow-right" src="./icons/arrowRightWhite.svg" alt="arrowRightWhite">
+          <button class="team-button-right">
+            <img class="team-arrow-right" src="./icons/arrowRightBig.svg" alt="arrowRightWhite">
+          </button>
         </div>
       </div>
     </section>
 
-    <section class="reviews">
+    <section id="reviews" class="reviews">
       <div class="container">
         <h2 class="reviews-title">Що кажуть про нас</h2>
         <div class="reviews-wraper">
@@ -288,7 +292,7 @@
             <img class="reviews-button-arrow-left" src="./icons/arrowLeftOrange.svg" alt="arrowLeft">
           </button>
           <ul class="reviews-list">
-            <li class="reviews-list-item reviews-active">
+            <li class="reviews-list-item ">
               <div class="reviews-list-item-card">
                 <h3 class="reviews-list-item-card-title">Ольга Березовська</h3>
                 <p class="reviews-list-item-card-text">приватний нотаріус м.Кропивницький</p>
@@ -303,7 +307,7 @@
                 </p>
               </div>
             </li>
-            <li class="reviews-list-item">
+            <li class="reviews-list-item reviews-active">
               <div class="reviews-list-item-card">
                 <h3 class="reviews-list-item-card-title">Олена Кравчук</h3>
                 <p class="reviews-list-item-card-text">батько учня 5-А класу</p>
@@ -359,7 +363,7 @@
           </li>
           <li class="footer-list-item">
             <p class="footer-list-item-text">Адреса:</p>
-            <a class="footer-list-item-link" href="https://maps.app.goo.gl/fWbESTTX2RLiX35D7">м.
+            <a class="footer-list-item-link" href="https://maps.app.goo.gl/T4YAu8cZcRVnkh5KA">м.
               Кропивницький, вул.
               Соборна, 1а</a>
           </li>
@@ -378,7 +382,7 @@
       </div>
     </div>
   </footer>
-  <script src="./musor.js"></script>
+  <script src="./index.js"></script>
 </body>
 
 </html>

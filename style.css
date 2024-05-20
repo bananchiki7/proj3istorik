@@ -82,6 +82,7 @@
 .hero-info-button:hover {
     color: rgba(222, 116, 43);
     transition: 0.3s;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 1920px) {
@@ -326,6 +327,7 @@
     border: 2px solid #000;
     border-radius: 10px;
     padding: 5px 6px;
+    cursor: pointer;
 }
 
 .areas-list::before {
@@ -872,10 +874,10 @@
 }
 
 .team-list-item-text-small {
-    width: 138px;
+    width: 120px;
     text-align: center;
     font-size: 9px;
-    margin-bottom: 6px;
+    margin: 0 auto 6px auto;
 }
 
 .team-list-item-text-small2 {
@@ -887,6 +889,16 @@
 
 .team-active {
     display: block;
+}
+
+.team-button-left{
+    background-color: #df803e;
+    border: 0;
+}
+
+.team-button-right{
+    background-color: #df803e;
+    border: 0;
 }
 
 .team-arrow-left {
@@ -926,6 +938,11 @@
         width: 400px;
         height: 690px;
         margin-top: 119px;
+    }
+
+    .team-button-left{
+        width: 106px;
+        height: 106px;
     }
 
     .team-arrow-right {
@@ -970,7 +987,7 @@
         margin-top: 0;
     }
 
-    .team-active>.team-list-item{
+    .team-active> .team-list-item{
         padding-bottom: 92px;
     }
 

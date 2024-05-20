@@ -38,7 +38,7 @@ const secondRe = document.querySelector('.reviews-list-item:nth-child(2)');
 const thirdRe = document.querySelector('.reviews-list-item:nth-child(3)');
 
 let arr2 = [firstRe, secondRe, thirdRe];
-let a = 0;
+let a = 1;
 buttonLeftRe.addEventListener("click", () => {
     a -= 1;
     if(a < 0){

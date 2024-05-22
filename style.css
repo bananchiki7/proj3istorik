@@ -1,7 +1,8 @@
 .header {
     border-bottom: 2px solid #fcfcfc;
     background-color: #df803e;
-    position: absolute;
+    position: sticky;
+    top: 0;
     width: 100%;
     z-index: 1;
     padding: 10px 0 10px 0;
@@ -41,6 +42,7 @@
     background-size: cover;
     z-index: 2;
     background-repeat: no-repeat;
+    pointer-events: none;
 }
 
 .hero::before {
@@ -54,6 +56,7 @@
     position: absolute;
     background-size: contain;
     z-index: 3;
+    pointer-events: none;
 }
 
 .hero-info-title {
@@ -64,7 +67,6 @@
     width: 150px;
     font-size: 10px;
     line-height: 1.3;
-    font-weight: 400;
     margin-top: 13px;
     margin-bottom: 31px;
 }
@@ -86,12 +88,6 @@
 }
 
 @media screen and (min-width: 1920px) {
-    .container {
-        min-width: 1620px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
     .header {
         padding-bottom: 29px;
         padding-top: 50px;
@@ -145,11 +141,12 @@
         background-repeat: no-repeat;
         width: 879px;
         height: 794px;
+        width: 879px;
         right: 80px;
         top: 146px;
         content: "";
         position: absolute;
-        background-size: contain;
+        /* background-size: contain; */
         z-index: 3;
     }
 
@@ -184,7 +181,6 @@
 .about-title {
     margin-bottom: 38px;
     text-align: center;
-    font-weight: 400;
     font-size: 15px;
     line-height: 1.3;
 }
@@ -216,7 +212,6 @@
 
 .about-list-item-title {
     text-align: center;
-    font-weight: 400;
     font-size: 13px;
     line-height: 1.3;
 }
@@ -235,7 +230,6 @@
         margin-bottom: 64px;
         text-align: center;
         font-size: 50px;
-        font-weight: 400;
         line-height: 1.3;
     }
 
@@ -260,7 +254,6 @@
 
     .about-list-item-title {
         font-size: 34px;
-        font-weight: 400;
         line-height: 1.3;
     }
 
@@ -650,7 +643,6 @@
         font-size: 50px;
         text-align: center;
         margin: 65px;
-        font-weight: 400;
     }
 
     .training-first-list {
@@ -861,13 +853,10 @@
 }
 
 .team-list-item {
-    display: none;
-}
-
-.team-list-item {
     background-color: rgba(252, 252, 252, 1);
     border-radius: 14px;
     padding-bottom: 9px;
+    display: none;
 }
 
 .team-list-item-img {
@@ -887,21 +876,20 @@
 .team-list-item-text {
     font-size: 7px;
     text-align: center;
-    margin-bottom: 8px;
 }
 
-.team-list-item-text-small {
-    width: 120px;
-    text-align: center;
-    font-size: 9px;
-    margin: 0 auto 6px auto;
+.team-list-item-info {
+    width: 138px;
 }
 
-.team-list-item-text-small2 {
-    font-size: 9px;
+.team-list-item-info-text {
     text-align: center;
-    width: 80px;
-    margin: 0 auto;
+    font-size: 9px;
+    margin: 8px 5px 0 5px;
+}
+
+.team-list-item-info-text:last-child {
+    margin: 8px 31px 0 31px;
 }
 
 .team-active {
@@ -966,8 +954,8 @@
     .team-list-item {
         padding-bottom: 72px;
         display: block;
-        height: 690px;
-        margin-top: 119px;
+        margin-top: 117px;
+        margin-bottom: 116px;
     }
 
     .team-button-left {
@@ -975,12 +963,12 @@
         height: 106px;
     }
 
-    .team-arrow-right {
+    .team-arrow-left {
         width: 106px;
         height: 106px;
     }
 
-    .team-arrow-left {
+    .team-arrow-right {
         width: 106px;
         height: 106px;
     }
@@ -993,7 +981,7 @@
     .team-list-item-title {
         font-size: 30px;
         line-height: 1;
-        margin-top: 33px;
+        margin-top: 39px;
         margin-bottom: 18px;
     }
 
@@ -1002,18 +990,9 @@
         margin-bottom: 0;
     }
 
-    .team-list-item-text-small {
-        font-size: 26px;
-        display: none;
-    }
-
-    .team-list-item-text-small2 {
-        display: none;
-    }
-
     .team-active {
-        height: 928px;
         margin-top: 0;
+        margin-bottom: 0
     }
 
     .team-active.team-list-item {
@@ -1033,23 +1012,18 @@
 
     .team-active>.team-list-item-text {
         font-size: 26px;
-        margin-bottom: 14px;
     }
 
-    .team-active>.team-list-item-text-small {
+    .team-list-item-info-text {
+        display: none;
+    }
+
+    .team-active>.team-list-item-info>.team-list-item-info-text {
         display: block;
         font-size: 26px;
         line-height: 1;
         width: 396px;
-        margin: 0 auto 14px auto;
-    }
-
-    .team-active>.team-list-item-text-small2 {
-        display: block;
-        font-size: 26px;
-        line-height: 1;
-        width: 360px;
-        margin: 0 auto;
+        margin: 14px auto 0 auto;
     }
 }
 

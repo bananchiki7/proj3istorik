@@ -9,7 +9,7 @@ let i = 1;
 
 buttonRight.addEventListener("click", () => {
     i += 1;
-    if(i > 2){
+    if (i > 2) {
         i = 0;
         arr[i].classList.add('team-active');
         arr[2].classList.remove('team-active');
@@ -21,7 +21,7 @@ buttonRight.addEventListener("click", () => {
 
 buttonLeft.addEventListener("click", () => {
     i -= 1;
-    if(i < 0){
+    if (i < 0) {
         i = 2;
         arr[i].classList.add('team-active');
         arr[0].classList.remove('team-active');
@@ -41,7 +41,7 @@ let arr2 = [firstRe, secondRe, thirdRe];
 let a = 1;
 buttonLeftRe.addEventListener("click", () => {
     a -= 1;
-    if(a < 0){
+    if (a < 0) {
         a = 2;
         arr2[a].classList.add('reviews-active');
         arr2[0].classList.remove('reviews-active');
@@ -53,7 +53,7 @@ buttonLeftRe.addEventListener("click", () => {
 
 buttonRightRe.addEventListener("click", () => {
     a += 1;
-    if(a > 2){
+    if (a > 2) {
         a = 0;
         arr2[a].classList.add('reviews-active');
         arr2[2].classList.remove('reviews-active');
@@ -63,3 +63,29 @@ buttonRightRe.addEventListener("click", () => {
     }
 });
 
+const boxItems = document.querySelectorAll('.about-list-item');
+
+boxItems.forEach(item => {
+    item.addEventListener('click', function () {
+        const isActive = item.classList.contains('active');
+        if (!isActive) {
+            boxItems.forEach(otherItem => {
+                if (otherItem !== item && otherItem.classList.contains('active')) {
+                    const otherImg = otherItem.querySelector('img');
+                    const otherText = otherItem.querySelector('text');
+
+                    otherImg.classList.remove('about-img');
+                    otherItem.classList.remove('about-list-orange');
+                    otherItem.classList.remove('active');
+
+                }
+            });
+        }
+        const img = item.querySelector('img');
+        img.classList.toggle('about-img');
+        item.classList.toggle('about-list-orange');
+        item.classList.toggle('active');
+
+
+    });
+})

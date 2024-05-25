@@ -1,10 +1,7 @@
 const buttonLeft = document.querySelector('.team-button-left');
 const buttonRight = document.querySelector('.team-button-right');
-const first = document.querySelector('.team-list-item:nth-child(1)');
-const second = document.querySelector('.team-list-item:nth-child(2)');
-const third = document.querySelector('.team-list-item:nth-child(3)');
 
-let arr = [first, second, third];
+let arr = document.querySelectorAll('.team-list-item');
 let i = 1;
 
 buttonRight.addEventListener("click", () => {
@@ -33,11 +30,9 @@ buttonLeft.addEventListener("click", () => {
 
 const buttonLeftRe = document.querySelector('.reviews-button-left');
 const buttonRightRe = document.querySelector('.reviews-button-right');
-const firstRe = document.querySelector('.reviews-list-item:nth-child(1)');
-const secondRe = document.querySelector('.reviews-list-item:nth-child(2)');
-const thirdRe = document.querySelector('.reviews-list-item:nth-child(3)');
 
-let arr2 = [firstRe, secondRe, thirdRe];
+
+let arr2 = document.querySelectorAll('.reviews-list-item');
 let a = 1;
 buttonLeftRe.addEventListener("click", () => {
     a -= 1;
@@ -63,6 +58,17 @@ buttonRightRe.addEventListener("click", () => {
     }
 });
 
+const sectFirst = document.querySelector(".about");
+const header = document.querySelector(".header");
+window.addEventListener("scroll", function () {
+    console.dir(sectFirst);
+    if (window.scrollY >= sectFirst.offsetHeight) {
+        header.classList.add("stick");
+    } else {
+        header.classList.remove("stick");
+    }
+});
+
 const boxItems = document.querySelectorAll('.about-list-item');
 
 boxItems.forEach(item => {
@@ -73,7 +79,6 @@ boxItems.forEach(item => {
                 if (otherItem !== item && otherItem.classList.contains('active')) {
                     const otherImg = otherItem.querySelector('img');
                     const otherText = otherItem.querySelector('text');
-
                     otherImg.classList.remove('about-img');
                     otherItem.classList.remove('about-list-orange');
                     otherItem.classList.remove('active');

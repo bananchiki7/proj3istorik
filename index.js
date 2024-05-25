@@ -77,7 +77,6 @@ boxItems.forEach(item => {
                     otherImg.classList.remove('about-img');
                     otherItem.classList.remove('about-list-orange');
                     otherItem.classList.remove('active');
-
                 }
             });
         }
@@ -85,7 +84,5 @@ boxItems.forEach(item => {
         img.classList.toggle('about-img');
         item.classList.toggle('about-list-orange');
         item.classList.toggle('active');
-
-
     });
 })

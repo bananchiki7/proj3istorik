@@ -1,9 +1,8 @@
 .header {
     border-bottom: 2px solid #fcfcfc;
     background-color: #df803e;
-    /* position: sticky;
-    top: 0; */
-    position: absolute;
+    position: sticky;
+    top: 0;
     width: 100%;
     z-index: 1;
     padding: 10px 0 10px 0;

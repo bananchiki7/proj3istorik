@@ -90,3 +90,4 @@ boxItems.forEach(item => {
         item.classList.toggle('active');
     });
 })
+console.log(1);

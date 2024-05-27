@@ -61,7 +61,6 @@ buttonRightRe.addEventListener("click", () => {
 const sectFirst = document.querySelector(".hero");
 const header = document.querySelector(".header");
 window.addEventListener("scroll", function () {
-    console.dir(sectFirst);
     if (window.scrollY >= sectFirst.offsetHeight) {
         header.classList.add("stick");
     } else {
